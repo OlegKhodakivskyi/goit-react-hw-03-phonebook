@@ -26,12 +26,12 @@ class App extends Component {
     }
   }
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(prevProps) {
     // console.log("Did Update");
     // console.log("prevState", prevState);
     // console.log("this.state", this.state);
 
-    if (prevState.contacts !== this.state.contacts) {
+    if (prevProps.contacts !== this.state.contacts) {
       localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
     }
   }

@@ -1,0 +1,7 @@
+.ContactList {
+  display: flex;
+  min-width: 400px;
+  height: 100%;
+  padding-left: 15px;
+  flex-direction: column;
+}
